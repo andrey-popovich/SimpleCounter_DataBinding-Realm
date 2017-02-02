@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="recycler_view_padding">3dp</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="counter_height">50dp</dimen>
+    <dimen name="dialog_text_size">20sp</dimen>
+</resources>

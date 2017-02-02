@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CounterItem" >
+        <item name="android:alpha">0.87</item>
+        <item name="android:background">@color/colorThird</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="Button" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:background">@color/background</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="Text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="DialogText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/dialog_text_size</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+</resources>

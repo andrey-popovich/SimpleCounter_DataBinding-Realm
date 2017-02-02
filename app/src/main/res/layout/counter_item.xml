@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="counter"
+            type="com.example.andrey.p_databindingsample.Counter" />
+
+        <variable
+            name="click"
+            type="com.example.andrey.p_databindingsample.DataChangedListener" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/counter_item"
+        style="@style/CounterItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/counter_height"
+        android:onClick="@{click::onItemClick}"
+        android:padding="@dimen/recycler_view_padding"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+        <Button
+            android:id="@+id/btnDec"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="15"
+            android:enabled="@{counter.value == counter.MIN_COUNT ? false : true}"
+            android:onClick="@{click::onDecrementClick}"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/counter_name"
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="55"
+            android:text="@{counter.name}"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/counter_txt"
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:text="@{String.valueOf(counter.value)}"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnInc"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="15"
+            android:enabled="@{counter.value == counter.MAX_COUNT ? false : true}"
+            android:onClick="@{click::onIncrementClick}"
+            android:text="+" />
+    </LinearLayout>
+</layout>

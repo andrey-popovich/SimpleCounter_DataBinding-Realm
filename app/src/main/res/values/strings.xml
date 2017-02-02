@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Count&amp;Counters</string>
+    <string name="add_counter">Add counter</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="edit_counter">Edit counter</string>
+    <string name="dialog_edit_name">Counters name</string>
+    <string name="dialog_edit_value">Counters value</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="ok">OK</string>
+    <string name="apply">Apply</string>
+    <string name="no_name_message">No text entered</string>
+
+    <string name="remove_all">Remove all</string>
+    <string name="enable_vibration">Enable vibration</string>
+    <string name="vibration">Vibration</string>
+
+    <string-array name="edit_remove_dialog">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_screen">Screen</string>
+    <string name="settings_keep_on_title">Keep screen on</string>
+    <string name="settings_keep_on_summary">Keep screen on while app is active</string>
+    <string name="settings_controls">Controls</string>
+    <string name="settings_sounds_title">Turn on sounds</string>
+    <string name="settings_sounds_summary">Play sounds</string>
+    <string name="settings_vibration_title">Turn on vibration</string>
+    <string name="settings_vibration_summary">Vibrate on changes</string>
+    <string name="settings_hard_title">Use hardware buttons</string>
+    <string name="settings_hard_summary">Change counter value using hardware buttons</string>
+    <string name="settings_other">Other</string>
+    <string name="settings_version_title">Version</string>
+    <string name="settings_wipe_title">Remove all counters</string>
+    <string name="settings_wipe_confirmation">Do you really want to remove all counters?</string>
+    <string name="settings_wipe_confirmation_yes">Remove all</string>
+    <string name="unknown">Unknown</string>
+    <string name="settings_version">v1.0.0</string>
+    <string name="dialog_edit_counter">Edit counter</string>
+
+</resources>
